@@ -27,6 +27,7 @@ Global Styles
 }
 a {
   color: $accent-color;
+  font-weight: $bold;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
   -webkit-transition-duration: 200ms;
@@ -244,7 +245,7 @@ Navigation
   position: absolute;
   height: 26px;
   right: 10px;
-  top: 48px;
+  top: 20px;
   visibility: hidden;
   transition: all 300ms ease-in-out;
 }
@@ -254,7 +255,7 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: url('../img/big/engagement_story/30copy.jpg') center center;
+  background: url('../img/big/engagement_story/980desaturated.jpg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -283,7 +284,7 @@ Hero
     margin-bottom: 80px;
   }
   .hero-content {
-    padding-top: 40%;
+    padding-top: 60%;
   }
   .hero-content img {
     width: 15%;
@@ -304,7 +305,6 @@ Hero
 }
 header {
   padding: 50px 0;
-  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
   position: relative;
   width: 1170px;
   margin: 0 auto;
@@ -321,6 +321,8 @@ header {
   }
   .logo {
     display: inline-block;
+    position:absolute;
+    top: 10px;
   }
   .logo img {
     height: 19px;
@@ -350,10 +352,10 @@ header {
       display: inline;
 
       a {
-        color: $txt-light;
+        color: $accent-color;
 
         &:hover {
-          color: $accent-color;
+          color: $txt-light;
         }
       }
     }
@@ -364,7 +366,7 @@ header {
   .member-actions {
     position: absolute;
     right: 0;
-    top: 41px;
+    top: 20px;
     transition: all 300ms ease-in-out;
   }
 }
