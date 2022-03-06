@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @media screen and (max-width: 1200px) {
     header {
         width: 90%;
@@ -297,7 +298,7 @@
     }
     
     .hero .hero-content img {
-        width: 65%;
+        width: 35%;
     }
 
     .hero .btn {
@@ -311,6 +312,8 @@
     }
 
     .hero h1 {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
         font-size: 50px;
     }
 
