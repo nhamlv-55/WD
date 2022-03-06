@@ -58,10 +58,12 @@ h2 {
 h3 {
   color: $h3-color;
   font-size: $font-size-h4;
-  font-weight: $bold;
+  font-weight: $light;
   text-transform: uppercase;
   letter-spacing: 3px;
   line-height: $base-line-height;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
 }
 
 h4 {

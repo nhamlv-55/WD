@@ -2,6 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 // Imports
 //@import "compass";
 @import "partials/typography";
@@ -252,7 +254,7 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: url('../img/hero-min.jpg') center center;
+  background: url('../img/big/engagement_story/30copy.jpg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -268,11 +270,14 @@ Hero
     color: $txt-light;
   }
   h1 {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
     color: $txt-light;
     margin-bottom: 40px;
   }
   p.intro {
     color: $txt-light;
+    font-family: 'Playfair Display', serif;
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 80px;
@@ -281,7 +286,7 @@ Hero
     padding-top: 40%;
   }
   .hero-content img {
-    width: 55%;
+    width: 15%;
     margin-bottom: 12%;
   }
 }
@@ -656,6 +661,7 @@ Instagram
 /* ==========================================================================
 Engagement Pics
 ========================================================================== */
+
 #eng-pics {
   img {
     width: 100%;
@@ -669,6 +675,7 @@ Engagement Pics
     position: relative;
     overflow: hidden;
     border-radius: 4px;
+
   }
   .img-wrap .overlay {
     position: absolute;
