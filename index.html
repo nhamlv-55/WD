@@ -200,17 +200,11 @@
 
     </section> -->
 
-
     <section id="eng-pics" class="section-padding">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3 class="header">Ảnh cưới</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2">
-                    <a class="fancybox" rel="group" href="img/big/engagement_story/980copy.jpg">
+        <div class="viewport">
+            <ul class="carousel-list" id="eng-pics-car">
+                <div class="item">
+                    <a rel="group" href="img/big/engagement_story/980copy.jpg">
                         <div class="img-wrap">
                             <div class="overlay">
                                 <i class="fa fa-search"></i>
@@ -219,8 +213,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-2">
-                    <a class="fancybox" rel="group" href="img/eng_pics/_RFX2992-lg.jpg">
+                <div class="item">
+                    <a rel="group" href="img/big/engagement_story/480.jpg">
                         <div class="img-wrap">
                             <div class="overlay">
                                 <i class="fa fa-search"></i>
@@ -230,8 +224,8 @@
                     </a>
                 </div>
 
-                <div class="col-md-4">
-                    <a class="fancybox" rel="group" href="img/eng_pics/NGP_4089-lg.jpg">
+                <div class="item">
+                    <a rel="group" href="img/big/engagement_story/720.jpg">
                         <div class="img-wrap">
                             <div class="overlay">
                                 <i class="fa fa-search"></i>
@@ -240,8 +234,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-2">
-                    <a class="fancybox" rel="group" href="img/eng_pics/NGP_4119-lg.jpg">
+                <div class="item">
+                    <a rel="group" href="img/big/engagement_story/430.jpg">
                         <div class="img-wrap">
                             <div class="overlay">
                                 <i class="fa fa-search"></i>
@@ -250,8 +244,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-2">
-                    <a class="fancybox" rel="group" href="img/eng_pics/_RFX3064-lg.jpg">
+                <div class="item">
+                    <a rel="group" href="img/big/engagement_story/220.jpg">
                         <div class="img-wrap">
                             <div class="overlay">
                                 <i class="fa fa-search"></i>
@@ -260,17 +254,79 @@
                         </div>
                     </a>
                 </div>
+                
+                <div class="item">
+                    <a rel="group" href="img/big/engagement_story/220.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/small/engagement_story/110 copy.jpg" alt="" />
+                        </div>
+                        <div class="paddingFix"></div>
+                    </a>
+                </div>
 
-
-            </div>
+                
+                <div class="item">
+                    <a rel="group" href="img/big/engagement_story/220.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/small/engagement_story/30copy.jpg" alt="" />
+                        </div>
+                        <div class="paddingFix"></div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a rel="group" href="img/big/engagement_story/220.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/small/engagement_story/730.jpg" alt="" />
+                        </div>
+                        <div class="paddingFix"></div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a rel="group" href="img/big/engagement_story/220.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/small/engagement_story/290 copy.jpg" alt="" />
+                        </div>
+                        <div class="paddingFix"></div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a rel="group" href="img/big/engagement_story/220.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/small/engagement_story/820 copy.jpg" alt="" />
+                        </div>
+                        <div class="paddingFix"></div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a rel="group" href="img/big/engagement_story/220.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/small/engagement_story/10copy.jpg" alt="" />
+                        </div>
+                        <div class="paddingFix"></div>
+                    </a>
+                </div>
+            </ul>
         </div>
-        <div class="container">
-            <div class="row hidden-lg hidden-md hidden-xs">
-                <div class="col-xs-12 section-border section-padding"></div>
-            </div>
-        </div>
-
     </section>
+
 
     <section id="map" class="section-padding">
         <div class="text-center">
@@ -385,11 +441,21 @@
             <div class="row">
                 <div class="col-sm-12 text-center content">
                     <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                    <p>Crafted by Ram with lots of <span class="fa fa-heart pulse2"></span> for Antara</p>
+                    <p>Trang Web do Nhâm và Dương tự thiết kế và lập trình <span class="fa fa-heart pulse2"></span></p>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script>
+
+        const scrollContainer = document.getElementById("eng-pics-car");
+
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+        });
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

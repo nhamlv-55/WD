@@ -650,82 +650,6 @@ Features-stack
 }
 
 /* ==========================================================================
-.blog
-========================================================================== */
-.blog {
-  padding-bottom: 120px;
-
-  img {
-    width: 100%;
-    height: auto;
-    -moz-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
-    -webkit-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
-  }
-  h2 {
-    font-size: $blog-post-title;
-    color: $txt-accent;
-    font-weight: $semibold;
-    text-transform: uppercase;
-    margin-top: 35px;
-  }
-  .btn {
-    margin-top: 20px;
-  }
-  .blog-img-wrap {
-    position: relative;
-    overflow: hidden;
-
-    .overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: rgba($white-color, 0.5);
-      -moz-transition: all 300ms ease-in-out;
-      -o-transition: all 300ms ease-in-out;
-      -webkit-transition: all 300ms ease-in-out;
-      transition: all 300ms ease-in-out;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-      filter: alpha(opacity=0);
-      opacity: 0;
-    }
-    i {
-      color: $white-color;
-      font-size: 20px;
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      top: 25px;
-      right: 35px;
-    }
-  }
-  .blog-img-wrap:hover img, .blog-img-wrap:focus img {
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-  .blog-img-wrap:hover .overlay, .blog-img-wrap:focus .overlay {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
-    filter: alpha(opacity=1);
-    opacity: 1;
-    z-index: 9;
-  }
-  figcaption i {
-    margin-left: 5px;
-    font-size: 15px;
-  }
-  figcaption a.blog-post-title {
-    color: $txt-primary;
-  }
-  figcaption a.blog-post-title:hover, figcaption a.blog-post-title:focus {
-    color: $txt-secondary;
-  }
-}
-
-/* ==========================================================================
 Instagram
 ========================================================================== */
 #instagram {
@@ -740,8 +664,7 @@ Engagement Pics
 
 #eng-pics {
   img {
-    width: 100%;
-    height: auto;
+    height: 300px;
     -moz-transition: all 300ms ease-in-out;
     -o-transition: all 300ms ease-in-out;
     -webkit-transition: all 300ms ease-in-out;
@@ -751,7 +674,6 @@ Engagement Pics
     position: relative;
     overflow: hidden;
     border-radius: 4px;
-
   }
   .img-wrap .overlay {
     position: absolute;
@@ -806,137 +728,6 @@ Engagement Pics
 }
 
 /* ==========================================================================
-Embed video
-========================================================================== */
-#video-bg {
-  height: 300px;
-}
-#video-content {
-  width: 100%;
-  height: 100%;
-  padding-top: 100px;
-  position: relative;
-  background: rgba(17, 17, 17, 0.5);
-  text-align: center;
-}
-#video-content h5 {
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: 300;
-  letter-spacing: 10px;
-}
-#video-content p {
-  color: #ffffff;
-}
-
-/* ==========================================================================
-Google map
-========================================================================== */
-#map-canvas {
-  height: 500px;
-  width: 100%;
-}
-#map-content-wrapper {
-  position: relative;
-  margin-top: -502px;
-  margin-bottom: 150px;
-}
-#map-content {
-  margin-top: 40px;
-  padding: 50px 60px;
-  background: #fff;
-  -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
-  transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
-}
-#btn-show-content {
-  padding: 20px;
-  background: #fff;
-  cursor: pointer;
-  display: inline-block;
-  -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
-  transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
-}
-.toggle-map-content {
-  opacity: 0;
-  visibility: hidden;
-}
-.pointer-events-none {
-  pointer-events: none;
-}
-.pointer-events-auto {
-  pointer-events: auto;
-}
-
-/* ==========================================================================
-RSVP form
-========================================================================== */
-.rsvp {
-  padding-bottom: 140px;
-  .rsvp-form {
-    .rsvp-btn {
-      padding: 15px 0;
-      border-radius: 3px;
-      width: 100%;
-      font-size: 13px;
-    }
-    .form-input-group {
-      width: 100%;
-      height: 55px;
-      margin: 0 auto 10px;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
-      border-radius: 5px;
-      border: solid 1px $keyline-color;
-      text-align: left;
-      position: relative;
-
-      i {
-        color: $accent-color;
-        font-size: 14px;
-      }
-      i:after {
-        content: "";
-        height: 30px;
-        width: 1px;
-        border-right: solid 1px $keyline-color;
-        position: absolute;
-        top: 50%;
-        left: 30px;
-        transform: translateY(-50%);
-      }
-      i.fa-user, i.fa-users, i.fa-envelope, .fa-key {
-        font-size: 14px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-left: 20px;
-      }
-      input {
-        padding-left: 68px;
-        width: 100%;
-        height: 100%;
-        -moz-border-radius: 6px;
-        -webkit-border-radius: 6px;
-        border-radius: 6px;
-        border: none;
-      }
-      input::-webkit-input-placeholder {
-        color: $form-placeholder;
-      }
-      input:-moz-placeholder {
-        color: $form-placeholder;
-      }
-      input::-moz-placeholder {
-        color: $form-placeholder;
-      }
-      input:-ms-input-placeholder {
-        color: $form-placeholder;
-      }
-    }
-  }
-}
-
-/* ==========================================================================
 Footer
 ========================================================================== */
 footer {
@@ -981,4 +772,85 @@ body.modal-open {
 }
 .modal-body {
   padding:25px;
+}
+
+/* Image carrousel */
+.carousel-list {
+  display: flex;
+  overflow-x: scroll;
+  padding: 20px;
+
+  /* prevent accidentally going back or triggering other swipe events */
+  overscroll-behavior: contain;
+
+  /* hide scroll bar */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  /* momentum scroll on iOS */
+  -webkit-overflow-scrolling: touch;
+
+  /* disbable vertical scroll for touch */
+  touch-action: pan-x;
+}
+
+/* hide scroll bar */
+.carousel-list::-webkit-scrollbar {
+  display: none;
+}
+
+.item {
+  height: 300px;
+  flex-shrink: 0;
+}
+
+.item:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* hacky fix for padding at the end of the list */
+.item:last-child {
+  position: relative;
+}
+
+.item:last-child::after {
+  position: absolute;
+  left: 100%;
+  height: 1px;
+  width: 20px;
+  display: block;
+  content: "";
+}
+
+/* 
+  The styling below is only for the decoration of this demo, 
+  it has no impact on scrolling or scroll behavior
+*/
+.carousel-list {
+  list-style: none;
+  border: 5px solid #fff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.item {
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 32px;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.viewport {
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
 }
